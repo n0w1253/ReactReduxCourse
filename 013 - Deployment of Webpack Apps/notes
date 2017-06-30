@@ -1,0 +1,12 @@
+dev pipeline (continuous running process)
+   our code -> webpack -> webpack dev server -> addr: localhost:8080
+
+production pipeline (heroku as an example)
+   our code -> push to heroku -> install npm modules -> run 'postinstall' -> run 'start' -> addr: xyz.herkuapp.com
+
+   package.json named scripts
+     postinstall exmaple: npm run postinstall
+                 ran immediately asfter installing npm modules
+
+     start       example npm run start
+                 responsible for starting and maintaining the server
